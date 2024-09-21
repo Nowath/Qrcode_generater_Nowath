@@ -158,7 +158,7 @@ function QrMa() {
                                         checked={eyeRadius === 30}
                                         onChange={handleEyeRadius}
                                     />
-                                    <div className="w-5 h-5 rounded-full bg-retro"></div>
+                                    <div className="w-5 h-5 rounded-md bg-retro"></div>
                                 </div>
                                 <div className="flex gap-5">
                                     <Radio
@@ -167,7 +167,7 @@ function QrMa() {
                                         checked={eyeRadius === 50}
                                         onChange={handleEyeRadius}
                                     />
-                                    <div className="w-5 rounded-md h-5 bg-retro"></div>
+                                    <div className="w-5 rounded-full h-5 bg-retro"></div>
                                 </div>
                             </div>
                         </div>
