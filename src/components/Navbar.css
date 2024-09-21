@@ -1,0 +1,17 @@
+.DD > li > .FF {
+    position: relative;
+}
+.DD > li > .FF::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #c73659;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.DD > li > .FF:hover::before {
+    width: 100%;
+}
