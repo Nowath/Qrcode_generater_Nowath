@@ -37,7 +37,6 @@ function QrMa() {
             <div className="lg:w-2/4 w-full flex flex-col">
                 <h1 className="text-4xl">QR-MAKER</h1>
                 <div className="input mt-5 flex flex-col gap-5">
-                    {/* Input fields for link, colors, logo, etc */}
                     <div className="link">
                         <h1>Input your link</h1>
                         <input
@@ -107,52 +106,69 @@ function QrMa() {
                             <div className="">Remove background</div>
                         </div>
                     </div>
-                    {/* Style and Eye radius options */}
                     <div className="flex gap-20">
                         <div className="style">
                             <h1>Choose your style</h1>
                             <div className="choose flex items-start flex-col gap-5 mt-5">
-                                <Radio
-                                    name={"qrStyle"}
-                                    value={"squares"}
-                                    checked={qrStyle === "squares"}
-                                    onChange={handleRadioChange}
-                                />
-                                <Radio
-                                    name={"qrStyle"}
-                                    value={"dots"}
-                                    checked={qrStyle === "dots"}
-                                    onChange={handleRadioChange}
-                                />
-                                <Radio
-                                    name={"qrStyle"}
-                                    value={"fluid"}
-                                    checked={qrStyle === "fluid"}
-                                    onChange={handleRadioChange}
-                                />
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"qrStyle"}
+                                        value={"squares"}
+                                        checked={qrStyle === "squares"}
+                                        onChange={handleRadioChange}
+                                    />
+                                    <div className="w-5 h-5 bg-retro"></div>
+                                </div>
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"qrStyle"}
+                                        value={"dots"}
+                                        checked={qrStyle === "dots"}
+                                        onChange={handleRadioChange}
+                                    />
+                                    <div className="w-5 h-5 rounded-full bg-retro"></div>
+                                </div>
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"qrStyle"}
+                                        value={"fluid"}
+                                        checked={qrStyle === "fluid"}
+                                        onChange={handleRadioChange}
+                                    />
+                                    <div className="w-5 rounded-md h-5 bg-retro"></div>
+                                </div>
                             </div>
                         </div>
                         <div className="styles">
-                            <h1>Choose your Eye Style</h1>
+                            <h1>Choose your style</h1>
                             <div className="choose flex items-start flex-col gap-5 mt-5">
-                                <Radio
-                                    name={"Eye"}
-                                    value={0}
-                                    checked={eyeRadius === 0}
-                                    onChange={handleEyeRadius}
-                                />
-                                <Radio
-                                    name={"Eye"}
-                                    value={30}
-                                    checked={eyeRadius === 30}
-                                    onChange={handleEyeRadius}
-                                />
-                                <Radio
-                                    name={"Eye"}
-                                    value={50}
-                                    checked={eyeRadius === 50}
-                                    onChange={handleEyeRadius}
-                                />
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"Eye"}
+                                        value={0}
+                                        checked={eyeRadius === 0}
+                                        onChange={handleEyeRadius}
+                                    />
+                                    <div className="w-5 h-5 bg-retro"></div>
+                                </div>
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"Eye"}
+                                        value={30}
+                                        checked={eyeRadius === 30}
+                                        onChange={handleEyeRadius}
+                                    />
+                                    <div className="w-5 h-5 rounded-full bg-retro"></div>
+                                </div>
+                                <div className="flex gap-5">
+                                    <Radio
+                                        name={"Eye"}
+                                        value={50}
+                                        checked={eyeRadius === 50}
+                                        onChange={handleEyeRadius}
+                                    />
+                                    <div className="w-5 rounded-md h-5 bg-retro"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
